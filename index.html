@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Madhanyoharaj</a>
         <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#skills">Skills & Projects</a>
+        <a href="#home" >Home</a>
+        <a href="#skills">Skills </a>
+        <a href="#projects-hobbies">Projects & Hobbies</a> 
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
         </nav>
@@ -20,12 +22,13 @@
         
     <section id="home" class="home">
         <div class="home-img">
-            <img src=".png" alt="">
+            <img src="" alt="">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Madhanyoharaj</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p class="Si">I am currently pursuing my degree in Electronics and Communication Engineering at Sri Krishna College of Engineering and Technology. I have a strong passion for technology and development, with skills in various programming languages and development platforms.</p>
+            <h3 class="typing-text">I'm a <span class="typewriter-text"></span></h3>
+            <p class="Si">I am currently pursuing my degree in Electronics and Communication Engineering at Sri Krishna College of Engineering and Technology. I have a strong passion for technology and development, with skills in various programming languages and development platforms.<br><br><br><br><br><br><br></p>
+            
             <div class="social-icons">
                 <a href="www.linkedin.com/in/madhanyoharaj"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Madanyoharaj"><i class="fa-brands fa-github"></i></a>
@@ -36,44 +39,82 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skills-list">
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, React, Angular, Vue</p>
+    
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 90%;">90%</div>
+                    </div> 
+                    <p>HTML, CSS, JavaScript, React, Angular, Vue</p>
+                
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-pencil-ruler"></i>
+               
+                    <h3>UI/UX Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 80%;">80%</div>
+                    </div>
+                  
+                    <p>Designing intuitive interfaces with user-friendly experiences</p>
+                
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                  
+                    <h3>Backend Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress-width: 70%;">70%</div>
+                    </div>
+                    
+                    <p>Node.js, Express, MongoDB, SQL</p>
+                
+                </div>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-pencil-ruler"></i>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive interfaces with user-friendly experiences</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Backend Development</h3>
-                <p>Node.js, Express, MongoDB, SQL</p>
-            </div>
-        </div>
-        <h2>Projects</h2>
-        <div class="skills-list">
-            <div class="skill-card" >
-                <h3>Projects</h3>
-                <a href="https://github.com/Madanyoharaj/Unity-Horror-project">  
-                    <h3>Horror game</h3>
-                    <p>An simpe unity
-                        Game
-                    </p></a></div>
-        </div>
-        <div class="skill-card" >
-            <h3>Projects</h3>
-            <a href="https://github.com/Madanyoharaj/Mern">  
-                <h3>Convrt</h3>
-                <p>A file convertion web site
-                </p></a></div>
-    </div>
+        
+        
+        
     </section>
+    
+    <section id="projects-hobbies" class="projects-hobbies">
+        <h2>Personal Projects and Hobbies</h2>
+      
+        <div class="skills-list">
+            <a href="https://github.com/Madanyoharaj/Unity-Horror-project" class="skill-card">
+                <div>
+                    <i class="fa-solid fa-skull"></i>                    
+                    <h3>Horror game</h3>
+                    <p>An simpe unity Game</p>
+                </div>
+            </a>
+            <a href="https://github.com/Madanyoharaj/Mern" class="skill-card">
+                <div>
+                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    <h3>Convrt</h3>
+                    <p>A file convertion web site</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="hobbies-list">
+            <div class="hobby-card">
+                <i class="fa-solid fa-robot" style="font-size:30px;color: rgb(12, 12, 12);"></i>
+                <h3>Drone Club Member</h3>
+                <p>Currently working on many UAV &UGV bots.</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fa fa-play"style="font-size:30px;color: rgb(12, 12, 12);" aria-hidden="true"></i>
 
+                <h3>Video Editing </h3>
+                <p>highly intrested to edit videos.</p>
+            </div>
+        </div>
+    </section>
+    
     <section id="education" class="education">
         <h2>Education</h2>
         <ul class="Si">
